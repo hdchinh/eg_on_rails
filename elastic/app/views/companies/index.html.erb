@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Companies</h1>
+
+<div>
+  <%= form_tag "/companies", method: :get, class: "form-inline" do %>
+    <%= text_field_tag "query", params[:query], class: "form-control" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= company.name %></td>
+        <td><%= link_to 'Show', company %></td>
+        <td><%= link_to 'Edit', edit_company_path(company) %></td>
+        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Company', new_company_path %>

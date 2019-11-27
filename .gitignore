@@ -1,0 +1,24 @@
+/elastic/.bundle
+
+# Ignore the default SQLite database.
+/elastic/db/*.sqlite3
+/elastic/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/elastic/log/*
+/elastic/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/elastic/storage/*
+!/storage/.keep
+
+/elastic/node_modules
+/elastic/yarn-error.log
+
+/elastic/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/elastic/config/master.key
