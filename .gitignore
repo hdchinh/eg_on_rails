@@ -75,3 +75,27 @@
 
 # Ignore master key for decrypting credentials and more.
 /public_activity/config/master.key
+
+
+# Ignore the default SQLite database.
+/friendly_id/db/*.sqlite3
+/friendly_id/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/friendly_id/log/*
+/friendly_id/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/friendly_id/storage/*
+!/storage/.keep
+
+/friendly_id/node_modules
+/friendly_id/yarn-error.log
+
+/friendly_id/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/friendly_id/config/master.key
