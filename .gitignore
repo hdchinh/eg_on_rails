@@ -22,3 +22,29 @@
 
 # Ignore master key for decrypting credentials and more.
 /elastic/config/master.key
+
+
+/paranoia/.bundle
+
+# Ignore the default SQLite database.
+/paranoia/db/*.sqlite3
+/paranoia/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/paranoia/log/*
+/paranoia/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/paranoia/storage/*
+!/storage/.keep
+
+/node_modules
+/paranoia/yarn-error.log
+
+/paranoia/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/paranoia/config/master.key
