@@ -99,3 +99,30 @@
 
 # Ignore master key for decrypting credentials and more.
 /friendly_id/config/master.key
+
+
+# Ignore bundler config.
+/ransack/.bundle
+
+# Ignore the default SQLite database.
+/ransack/db/*.sqlite3
+/ransack/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/ransack/log/*
+/ransack/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/ransack/storage/*
+!/storage/.keep
+
+/ransack/node_modules
+/ransack/yarn-error.log
+
+/ransack/public/assets
+/ransack/.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/ransack/config/master.key
